@@ -1,0 +1,512 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Antim Kumar | Portfolio</title>
+
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+
+<body> 
+    <div class="cursor-glow"></div>
+    <canvas id="bg-canvas"></canvas>
+    
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <div class="logo">AA_G</div>
+
+    <ul class="nav-links">
+        <li><a href="#home">HOME</a></li>
+        <li><a href="#skills">SKILLS</a></li>
+        <li><a href="#projects">PROJECTS</a></li>
+        <li><a href="#achievements">ACHIEVEMENTS</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+    </ul>
+</nav>
+
+<!-- ================= HOME ================= -->
+<section id="home" class="hero">
+
+    <div class="left">
+        <div class="welcome-box">
+            <span class="dot"></span>
+            <h2>WELCOME TO MY PORTFOLIO</h2>
+        </div>
+        
+        <p class="tag"># Hello World - Data Scientist</p>
+
+        <h1 class="name">
+            <span>Antim Kumar</span><br>
+            <span></span>
+        </h1>
+
+        <h2 class="typing"></h2>
+
+        <p class="desc">
+            Computer Science student skilled in Java, Python, web development, and data analysis.Strong in problem-solving with DSA training
+            and 150+ LeetCode problems.
+            Experienced in building dashboards and data-driven projects.
+        </p>
+
+        <div class="stats">
+            <div><h3>300+</h3><p>Problems</p></div>
+            <div><h3>3</h3><p>Projects</p></div>
+            <div><h3>6.09</h3><p>CGPA</p></div>
+        </div>
+
+        <div class="buttons">
+            <a href="#projects" class="btn btn-blue">Explore Projects -></a>
+            <a href="#contact" class="btn btn-pink">Hire Me</a>  <!-- 👈 fix -->
+            <a href="{% static 'cvNEWnew.pdf' %}" class="btn btn-blue" download>Download Resume</a>
+            <a href="{% static 'cvNEWnew.pdf' %}" class="btn btn-purple">View Resume</a>
+        </div>
+    </div>
+    <div class="social-icons">
+
+        <a href="https://github.com/Ankitkumar914" target="_blank">
+            <img src="{% static 'images/Gimage.png' %}" alt="GitHub">
+        </a>
+    
+        <a href="https://www.linkedin.com/in/antim-ankit-5a76b6304" target="_blank">
+            <img src="{% static 'images/Limage.png' %}" alt="LinkedIn">
+        </a>
+    
+        <a href="mailto:antimkumarankit@gmail.com">
+            <img src="{% static 'images/ggimage.png' %}" alt="Email">
+        </a>
+
+        <a href="https://leetcode.com/u/Antim_Ankit123/" target="_blank">
+            <img src="{% static 'images/LLimage.png' %}" alt="LeetCode">
+
+        <a href="https://www.instagram.com/antimkumarankit?igsh=MTZkcGh3Ymo3NDE5" target="_blank">
+            <img src="{% static 'images/oimage.png' %}" alt="Instagram">
+        </a>
+    
+        <a href="tel:+919693315956">
+            <img src="{% static 'images/Pimage.png' %}" alt="Phone">
+        </a>
+        
+    
+    </div>
+
+    <div class="right">
+        <div class="circle">
+            <img src="{% static 'images/antimIMG.jpeg' %}">
+        </div>
+    </div>
+
+</section>
+
+<section class="skills-section" id="skills">
+    <div class="tech-header">
+        <span class="slash">//</span>
+        <span class="tech-text">TECH ARSENAL</span>
+        <span class="line"></span>
+    </div>
+    
+    <h2 class="section-title">My <span>Skills</span> & Stack</h2>
+
+    <div class="skills-container">
+
+        <!-- Languages -->
+        <div class="skill-card">
+            <h3>⚡ Languages</h3>
+            <div class="tags">
+                <span>C</span>
+                <span>C++</span>
+                <span>Java</span>
+                <span>Python</span>
+                <span>SQL</span>
+                <span>HTML5</span>
+                <span>CSS3</span>
+            </div>
+        </div>
+
+        <!-- Frameworks -->
+        <div class="skill-card">
+            <h3>🚀 Frameworks</h3>
+            <div class="tags">
+                <span>Django</span>
+                <span>Bootstrap</span>
+                <span>Tailwind</span>
+                <span>Flask</span>
+            </div>
+        </div>
+
+        <!-- Tools -->
+        <div class="skill-card">
+            <h3>🛠 Tools & Platforms</h3>
+            <div class="tags">
+                <span>Git</span>
+                <span>GitHub</span>
+                <span>VS Code</span>
+                <span>Power BI</span>
+                <span>LeetCode</span>
+            </div>
+        </div>
+
+        <!-- Soft Skills -->
+        <div class="skill-card">
+            <h3>🧠 Soft Skills</h3>
+            <div class="tags">
+                <span>Problem Solving</span>
+                <span>Communication</span>
+                <span>Creativity</span>
+                <span>Adaptability</span>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- ================= PROJECTS ================= -->
+<section class="projects-section" id="projects">
+
+    <!-- 🔥 TOP HEADING -->
+    <div class="tech-header">
+        <span class="slash">//</span>
+        <span class="tech-text">PORTFOLIO</span>
+        <span class="line"></span>
+    </div>
+
+    <h2 class="section-title">
+        Featured <span>Projects</span>
+    </h2>
+
+    <!-- 🔥 PROJECT CARDS FLEX -->
+    <div class="projects-container">
+
+        <!-- PROJECT 1 -->
+        <div class="project-card">
+            <div class="project-image">
+                <img src="{% static 'images/Dimage.png' %}" alt="project">
+            </div>
+
+            <div class="project-content">
+                <h3>Mobile Sales Dashboard (2021–2024)</h3>
+                <p>Interactive Power BI dashboard showing sales trends and insights.</p>
+
+                <div class="tags">
+                    <span>Power BI</span>
+                    <span>Analytics</span>
+                </div>
+
+                <div class="project-buttons">
+                    <a href="https://www.linkedin.com/posts/antim-gupta-5a76b6304_powerbi-dashboarddesign-dataanalytics-activity-7403864320402694144-_bFv"
+                       target="_blank" class="btn btn-blue">View Project</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- PROJECT 2 -->
+        <div class="project-card">
+            <div class="project-image">
+                <img src="{% static 'images/ddimage.png' %}" alt="EDA">
+            </div>
+
+            <div class="project-content">
+                <h3>EDA on Bird Monitoring Dataset</h3>
+                <p>Data analysis project using Python, Pandas, Seaborn & Matplotlib.</p>
+
+                <div class="tags">
+                    <span>Python</span>
+                    <span>Pandas</span>
+                    <span>Seaborn</span>
+                </div>
+
+                <div class="project-buttons">
+                    <a href="https://www.linkedin.com/posts/antim-gupta-5a76b6304_im-a-passionate-student-exploring-the-activity-7317136543045865474-vzXD"
+                       target="_blank" class="btn btn-green">Live Demo</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= EDUCATION ================= -->
+<section class="education-section" id="achievements">
+
+    <div class="tech-header">
+        <span class="slash">//</span>
+        <span class="tech-text">BACKGROUND</span>
+        <span class="line"></span>
+    </div>
+
+    <h2 class="section-title">Education</h2>
+
+    <div class="education-container">
+
+        <div class="edu-card">
+            <div>
+                <h3>B.Tech – Computer Science</h3>
+                <p>Lovely Professional University • 2023 – Present</p>
+            </div>
+            <span class="score">7.09</span>
+        </div>
+
+        <div class="edu-card">
+            <div>
+                <h3>Intermediate (Class XII)</h3>
+                <p>MMMV Collage Gwalpara • 2022</p>
+            </div>
+            <span class="score">70.02%</span>
+        </div>
+
+        <div class="edu-card">
+            <div>
+                <h3>Matriculation (Class X)</h3>
+                <p>Madhu Ram High School • 2020</p>
+            </div>
+            <span class="score">80%</span>
+        </div>
+
+    </div>
+</section>
+
+
+
+
+{% load static %}
+
+<section class="training-section">
+
+    <div class="tech-header">
+        <span class="slash">//</span>
+        <span class="tech-text">EXPERIENCE</span>
+        <span class="line"></span>
+    </div>
+
+    <h2 class="section-title">Training</h2>
+
+    <div class="training-card">
+
+        <div class="training-top">
+            <span class="status">● TRAINING COMPLETED</span>
+            <p class="date">JUN '4 – JUL '15</p>
+
+            <h3>Summer Training – Java Application Development</h3>
+
+
+        </div>
+
+        <div class="training-tags">
+            <span>Java</span>
+            <span>Swing/AWT</span>
+            <span>JDBC</span>
+            <span>MySQL</span>
+            <span>Sockets</span>
+        </div>
+
+        <div class="training-grid">
+            <div class="mini-card">▶ Java OOP & Exception Handling</div>
+            <div class="mini-card">▶ Desktop apps using Swing/AWT</div>
+            <div class="mini-card">▶ CRUD via JDBC + MySQL</div>
+            <div class="mini-card">▶ Multithreading & File I/O</div>
+        </div>
+        
+        
+
+    </div>
+    <div class="buttons">
+        <a href="{% static 'Antim_Kumarcopy.pdf' %}" class="btn btn-purple">View Resume</a>
+    </div>
+
+</section>
+<section class="pro-section">
+
+    <h2 class="title">Thinking in <span>Code</span></h2>
+
+    <!-- STATS -->
+    <div class="stats">
+        <div class="card">350+<p>Problems Solved</p></div>
+        <div class="card">2<p>Major Projects</p></div>
+        <div class="card">5<p>Certifications</p></div>
+    </div>
+
+    <div class="container">
+
+        <!-- LEFT CODE -->
+        <div class="code-box">
+<pre><code>// Antim Kumar - Developer
+
+const antim = {
+  name: "Antim Kumar",
+  role: "Software Developer",
+  skills: ["Python", "Java", "DSA"],
+  problems: "350+ solved",
+  status: "Open to Work 🚀"
+};
+
+function hireMe() {
+  return "Let's build something epic!";
+}
+</code></pre>
+        </div>
+
+        <!-- RIGHT SKILLS -->
+        <div class="skills">
+
+            <div class="skill">
+                <span>Java</span><span>90%</span>
+                <div class="bar"><div style="width:90%"></div></div>
+            </div>
+
+            <div class="skill">
+                <span>Python</span><span>85%</span>
+                <div class="bar"><div style="width:85%"></div></div>
+            </div>
+
+            <div class="skill">
+                <span>DSA</span><span>92%</span>
+                <div class="bar"><div style="width:92%"></div></div>
+            </div>
+
+            <div class="skill">
+                <span>SQL</span><span>88%</span>
+                <div class="bar"><div style="width:88%"></div></div>
+            </div>
+
+            <div class="skill">
+                <span>Django</span><span>85%</span>
+                <div class="bar"><div style="width:85%"></div></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= CERTIFICATIONS ================= -->
+{% load static %}
+
+<section class="cert-section">
+
+    <div class="tech-header">
+        <span class="slash">//</span>
+        <span class="tech-text">CREDENTIALS</span>
+        <span class="line"></span>
+    </div>
+
+    <h2 class="section-title">
+        Certifications <span>& Badges</span>
+    </h2>
+
+    <div class="cert-container">
+
+        <!-- ✅ CARD 1 -->
+        <a href="{% static 'aa.pdf' %}" target="_blank" class="cert-card">
+            ☁️ DSA 
+            <p>DSA • 2025</p>
+        </a>
+
+        <!-- ✅ CARD 2 -->
+        <a href="{% static 'hackathoncopy.pdf' %}" target="_blank" class="cert-card highlight">
+            🤖 Hackatone 
+            <p>24 h • 2025</p>
+        </a>
+
+        <!-- ✅ CARD 3 -->
+        <a href="{% static 'info.pdf' %}" target="_blank" class="cert-card">
+            🧠 Generative AI 
+            <p>Google • 2025</p>
+        </a>
+
+        <!-- ✅ CARD 4 -->
+        <a href="{% static 'CSEcopy.pdf' %}" target="_blank" class="cert-card">
+            🌐 OS 
+            <p>Coursera • 2024</p>
+        </a>
+        <a href="{% static 'javacopy.pdf' %}" target="_blank" class="cert-card">
+            @ Java 
+            <p>LPU • 2025</p>
+        </a>
+
+        <a href="{% static 'cppCertcopy.pdf' %}" target="_blank" class="cert-card">
+            # CPP 
+            <p>LPU• 2025</p>
+        </a>
+
+    </div>
+
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section id="contact">
+
+    <h1 class="contact-title">
+        Ready to Build <br>
+        <span>Something Epic?</span>
+    </h1>
+
+    <div class="contact-wrapper">
+
+        <!-- LEFT FORM -->
+        {% if msg %}
+        <p style="color:green; text-align:center;">{{ msg }}</p>
+        {% endif %}
+        
+        <form method="POST" class="contact-form">
+            {% csrf_token %}
+
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <input type="text" name="subject" placeholder="Subject">
+            <textarea name="message" placeholder="Your Message..." required></textarea>
+
+            <button type="submit">🚀 Send Message</button>
+        </form>
+
+        <!-- RIGHT INFO -->
+        <div class="contact-info">
+
+            <a href="mailto:antimankitlpu@gmail.com" target="_blank" class="info-box">
+                <img src="{% static 'images/ggimage.png' %}" alt="Email">
+                📧 antimankitlpu@gmail.com
+            </a>
+
+            <a href="tel:9693315956" class="info-box">
+                <img src="{% static 'images/Pimage.png' %}" alt="Phone">
+                📞 +91 9693315956
+            </a>
+
+            <a href="https://github.com/Ankitkumar914" target="_blank" class="info-box">
+                <img src="{% static 'images/Gimage.png' %}" alt="GitHub">
+                💻 GitHub Profile
+               
+            </a>
+
+            <a href="https://www.linkedin.com/in/antim-ankit-5a76b6304" target="_blank" class="info-box">
+                <img src="{% static 'images/Limage.png' %}" alt="LinkedIn">
+                🔗 LinkedIn Profile
+            </a>
+
+            <a href="https://leetcode.com/u/Antim_Ankit123/" target="_blank" class="info-box">
+                <img src="{% static 'images/LLimage.png' %}" alt="LeetCode">
+                🧠 LeetCode (150+ Problems)
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+<div class="ai-robot">
+    <lottie-player 
+        src="https://assets2.lottiefiles.com/packages/lf20_kyu7xb1v.json"
+        background="transparent"
+        speed="3"
+        loop
+        autoplay>
+    </lottie-player>
+</div>
+<script src="{% static 'js/script.js' %}"></script>
+</body>
+</html>
